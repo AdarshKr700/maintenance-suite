@@ -1,0 +1,6 @@
+# backups, logs, config with secrets
+logs/
+var_backups/
+config/secrets.env
+*.tar.gz
+*.swp
