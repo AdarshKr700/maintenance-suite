@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# log_monitor.sh - scan logs for critical patterns and optionally send alerts
 set -o nounset
 set -o pipefail
 
@@ -7,7 +6,6 @@ HERE="$(cd "$(dirname "$0")" && pwd)"
 source "$HERE/lib.sh"
 load_config
 
-# default to syslog / messages depending on distro
 LOG_TO_MONITOR="/var/log/syslog"
 if [[ ! -f "$LOG_TO_MONITOR" ]]; then
   LOG_TO_MONITOR="/var/log/messages"

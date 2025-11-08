@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# suite_menu.sh - interactive wrapper for the maintenance suite
 set -o nounset
 set -o pipefail
 

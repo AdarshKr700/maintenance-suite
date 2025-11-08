@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# update_and_cleanup.sh - update system packages and cleanup
 set -o errexit
 set -o nounset
 set -o pipefail

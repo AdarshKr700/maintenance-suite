@@ -1,12 +1,7 @@
 #!/usr/bin/env bash
-# Shared helpers for maintenance scripts
 set -o nounset
 set -o pipefail
 
-# non-fatal errors won't stop the script unless explicitly checked. For critical scripts you may uncomment errexit:
-# set -o errexit
-
-# default config values (overridden by config file)
 LOGFILE="./logs/maintenance-suite.log"
 RETENTION_DAYS=30
 KEEP_DAYS=14
@@ -42,7 +37,6 @@ load_config() {
   local cfg
   cfg="$(dirname "$0")/../config/maintenance.conf"
   if [[ -f "$cfg" ]]; then
-    # shellcheck disable=SC1090
     source "$cfg"
   fi
 }
