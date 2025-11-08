@@ -87,7 +87,7 @@ Removes older backups according to the retention period set in configuration
 - Logs every backup action with timestamps
 - Automatically cleans old backups
 
-### 🧾 Example usage
+### Example usage
 ```bash
 ./scripts/backup.sh
 ```
